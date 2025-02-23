@@ -1,0 +1,28 @@
+# Temporary and binary files
+*~
+*.py[cod]
+*.so
+*.orig
+*.pot
+__pycache__/*
+.cache/*
+.*.swp
+*/.ipynb_checkpoints/*
+.DS_Store
+
+# Project files
+.ropeproject
+.project
+.pydevproject
+.settings
+.idea
+.vscode
+
+# Environment
+.env
+env/
+
+# Per-project virtualenvs
+venv*/
+.venv*/
+.conda*/

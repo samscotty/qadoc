@@ -1,0 +1,28 @@
+[project]
+name = "qadoc"
+version = "0.1.0"
+description = "PDF-based Question Answering (Q&A) system with LangChain and OpenAI."
+authors = [
+    { name = "Sam Scott", email = "sam.scott7@me.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+keywords = ["q&a"]
+dependencies = [
+    "click>=8.1.8",
+    "langchain-community>=0.3.17",
+    "langchain-openai>=0.3.6",
+    "pypdf>=5.3.0"
+]
+
+[project.scripts]
+qadoc = "qadoc:main"
+
+[tool.poetry]
+packages = [
+    { include = "qadoc", from = "src" },
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
